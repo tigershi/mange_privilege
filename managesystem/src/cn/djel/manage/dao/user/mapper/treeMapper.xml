@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="cn.djel.manage.dao.user.ITreeDao">  
+   
+ <select id="getMenu" parameterType="String" resultType="treeNode">
+    select m.id,m.text,m.url,m.icon as iconCls,m.url ,m.parentid from t_menu m where  m.parentid = #{pid};
+ </select>
+   
+</mapper> 

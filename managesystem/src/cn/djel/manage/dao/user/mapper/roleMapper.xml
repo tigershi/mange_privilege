@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="cn.djel.manage.dao.user.IRoleDao">  
+    <select id="getAllEntity" resultType="role">  
+      select id, name, enable, comment from t_roles
+    </select>  
+  <select id="getEntityById" parameterType="Integer" resultType="role">
+       
+  </select>
+  <insert id="insertEntity">
+  
+  </insert>
+  <update id="updateEntity">
+  </update>
+  <delete id="deleteEntity">
+  
+  </delete>
+ </mapper> 
