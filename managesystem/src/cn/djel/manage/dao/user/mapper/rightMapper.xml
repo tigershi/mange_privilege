@@ -4,19 +4,19 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
 <mapper namespace="cn.djel.manage.dao.user.IRightDao">  
     <select id="getAllEntity" resultType="right">  
-    select * from t_rights r where r.enable =1
+    select * from rights r where r.enable =1
     </select>  
   <select id="getEntityById" parameterType="Integer" resultType="right">
-     select * from t_rights r where r.id=#{id}
+     select * from rights r where r.id=#{id}
   </select>
   <insert id="insertEntity" parameterType="right" keyProperty="id">
      <selectKey keyProperty="id" order="BEFORE" resultType="Integer">
-       select (max(id)+1) as id from t_rights
+       select (max(id)+1) as id from rights
     </selectKey>
-   insert into t_rights(id,name,url,rightbit,rightcode,enable) values(#{id},#{name},#{rightbit},#{rightcode},#{enable})
+   insert into rights(id,name,url,rightbit,rightcode,enable) values(#{id},#{name},#{rightbit},#{rightcode},#{enable})
   </insert>
-  <update id="updateEntity">
-   UPDATE t_rights 
+  <update id="updateEntity" parameterType="right">
+   UPDATE rights 
    SET name= #{name}, 
    <if test="rightbit != 0 and rightbit !=null ">
    rightbit=#{rightbit}, 
@@ -25,10 +25,10 @@
       rightcode=#{rightcode},
    </if>
     url=#{url}
-   WHERE id=1
+   WHERE id=#{id}
   </update>
   <delete id="deleteEntity" parameterType="Integer">
-   delete from t_rights r where r.id=#{id} 
+   delete from rights r where r.id=#{id} 
   </delete>
   
     </mapper> 

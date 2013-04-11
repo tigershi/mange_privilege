@@ -15,6 +15,5 @@
   <update id="updateEntity">
   </update>
   <delete id="deleteEntity">
-  
   </delete>
  </mapper> 

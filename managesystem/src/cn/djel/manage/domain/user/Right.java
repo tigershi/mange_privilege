@@ -7,7 +7,7 @@ public class Right implements Serializable{
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = -4899819849571225628L;
+private static final long serialVersionUID = -4899819849571225628L;
 	/**
 	 *  the right entity
 	 */
@@ -16,9 +16,9 @@ public class Right implements Serializable{
    private String name;
    private String url;
    private Integer enable;
-   private int isShow;
    private int rightBit;
    private long rightCode;
+   private String comment;
    
 public int getId() {
 	return id;
@@ -56,12 +56,10 @@ public long getRightCode() {
 public void setRightCode(long rightCode) {
 	this.rightCode = rightCode;
 }
-public int getIsShow() {
-	return isShow;
+public String getComment() {
+	return comment;
 }
-public void setIsShow(int isShow) {
-	this.isShow = isShow;
+public void setComment(String comment) {
+	this.comment = comment;
 }
-
-
 }

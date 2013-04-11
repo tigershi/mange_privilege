@@ -77,7 +77,7 @@ private final Logger log  = Logger.getLogger(InitController.class);
 			 flag =true;
 		 }else{
 			Right ri = rightMap.get(node.getUrl());
-			return InitUtil.judgeRight(user,ri);
+			return flag; //InitUtil.judgeRight(user,ri);
 		 }
 	 }
 	return flag;

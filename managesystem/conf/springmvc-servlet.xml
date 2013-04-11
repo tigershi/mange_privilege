@@ -16,7 +16,7 @@
 						
  
        <!-- 把标记了@Controller注解的类转换为bean -->     
-	   <context:component-scan base-package="cn.djel.manage.web.controller" />
+	   <context:component-scan base-package="cn.djel.manage.web" />
 	
     <bean id="stringHttpMessageConverter" class="org.springframework.http.converter.StringHttpMessageConverter">
         <property name="supportedMediaTypes">

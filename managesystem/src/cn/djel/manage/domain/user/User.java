@@ -1,6 +1,7 @@
 package cn.djel.manage.domain.user;
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 public class User implements Serializable{
@@ -16,7 +17,9 @@ public class User implements Serializable{
 	  private int    rightbit;
 	  private long   rightcode;
 	  private boolean  admin;
-	  private String mail;
+	  private int   enable;
+	  private Date regDate = new Date();
+	  private String email;
 	  private String phone;
 	  private Integer post;
 	  private Set<Right> rights =null;
@@ -56,12 +59,6 @@ public class User implements Serializable{
 	}
 	public void setRightcode(long rightcode) {
 		this.rightcode = rightcode;
-	}
-	public String getMail() {
-		return mail;
-	}
-	public void setMail(String mail) {
-		this.mail = mail;
 	}
 	public String getPhone() {
 		return phone;
@@ -123,6 +120,24 @@ public class User implements Serializable{
 	}
 	public void setAdmin(boolean admin) {
 		this.admin = admin;
+	}
+	public Date getRegDate() {
+		return regDate;
+	}
+	public void setRegDate(Date regDate) {
+		this.regDate = regDate;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public int getEnable() {
+		return enable;
+	}
+	public void setEnable(int enable) {
+		this.enable = enable;
 	}
 
 }

@@ -10,11 +10,13 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 	    <typeAlias type="cn.djel.manage.domain.user.Right" alias="right"/>
 	    <typeAlias type="cn.djel.manage.domain.user.Role" alias="role"/>
 	    <typeAlias type="cn.djel.manage.domain.user.User" alias="user"/>
+	    <typeAlias type="cn.djel.manage.domain.commodity.Type" alias="type"/>
 	</typeAliases>
 	<mappers>
 	    <mapper resource="cn/djel/manage/dao/user/mapper/treeMapper.xml"/>
 	    <mapper resource="cn/djel/manage/dao/user/mapper/rightMapper.xml"/>
 	    <mapper resource="cn/djel/manage/dao/user/mapper/roleMapper.xml"/>
 	    <mapper resource="cn/djel/manage/dao/user/mapper/userMapper.xml"/>
+	    <mapper resource="cn/djel/manage/dao/commodity/mapper/typeMapper.xml"/>
 	</mappers>
 </configuration>

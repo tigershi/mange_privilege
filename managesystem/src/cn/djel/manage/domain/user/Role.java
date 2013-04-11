@@ -14,6 +14,7 @@ public class Role implements Serializable{
    private int id;
    private String name;
    private Integer enable;
+   private String  roleValue;
    private String comment;
    private Set<Right> rights =null;
 public int getId() {
@@ -55,6 +56,12 @@ public void addRight(Right right){
 		rights = new HashSet<Right>();
 	}
 	rights.add(right);
+}
+public String getRoleValue() {
+	return roleValue;
+}
+public void setRoleValue(String roleValue) {
+	this.roleValue = roleValue;
 }
 	
 }

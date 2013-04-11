@@ -54,4 +54,7 @@
 	<bean id="treeDao" parent="baseDao">
 	<property name="mapperInterface" value="cn.djel.manage.dao.user.ITreeDao"></property>
 	</bean>
+	<bean id="typeDao" parent="baseDao">
+	<property name="mapperInterface" value="cn.djel.manage.dao.commodity.ITypeDao"></property>
+	</bean>
 </beans>

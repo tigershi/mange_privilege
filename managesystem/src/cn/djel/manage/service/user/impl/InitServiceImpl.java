@@ -15,7 +15,8 @@ public class InitServiceImpl implements IInitService{
 	public void setTreeDao(ITreeDao treeDao) {
 		this.treeDao = treeDao;
 	}
-	@Override
+	
+	
 	public List<TreeNode> getTreesByParent(String pid) {
 		// TODO Auto-generated method stub
 		return this.treeDao.getTreeByParent(pid);

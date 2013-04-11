@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="JSD1107_T-elts"
+  id="myeclipse.1337785238156"
+  context-root="/JSD1107_T-elts"
+  j2ee-spec="5.0"
+  archive="JSD1107_T-elts.war">
+  <attributes>
+    <attribute name="webrootdir" value="&lt;prjroot&gt;" />
+  </attributes>
+</project-module>
+

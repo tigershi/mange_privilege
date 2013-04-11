@@ -14,14 +14,7 @@ public class TreeNode implements Serializable{
 	 */
 	private static final long serialVersionUID = -2862333523482043502L;
 	/**
-	 * 每个节点可以包含下列特�?�?
- ：节点的 id，它对于加载远程数据很重要�? 
- text：显示的节点文字�?
-state：节点状态， 'open' �?'closed'，
-默认是 'open'。当设为 'closed' 时，此节点有子节点，并且将从远程站点加载它们�?
-checked：指示节点是否被选中�?Indicate whether the node is checked selected. 
-attributes：给�?��节点追加的自定义属�?�?
-children：定义了�?��子节点的节点数组�?
+
 	 */
 	private String id;          //要显示的子节点的ID  
     private String text;        //要显示的子节点的 Text  
